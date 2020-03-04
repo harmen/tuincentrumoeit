@@ -1,0 +1,33 @@
+<%= form_for @product, method: :post, html: {autocomplete: "off"} do |f| %>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.text_field :name, class: "mdl-textfield__input" %>
+    <%= f.label :name, class: "mdl-textfield__label", value: "Naam"%>
+  </div>
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.text_field :description, class: "mdl-textfield__input" %>
+    <%= f.label :description, class: "mdl-textfield__label", value: "Beschrijving" %>
+  </div>
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.number_field :height, class: "mdl-textfield__input" %>
+    <%= f.label :height, class: "mdl-textfield__label", value: "Hoogte van de plant" %>
+  </div>
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.text_field :image_src, class: "mdl-textfield__input" %>
+    <%= f.label :image_src, class: "mdl-textfield__label", value: "Link naar afbeelding" %>
+  </div>
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.date_field :flowering_time_begin, class: "mdl-textfield__input" %>
+    <%= f.label :flowering_time_begin, class: "mdl-textfield__label", value: "Begin bloeitijd" %>
+  </div>
+
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.date_field :flowering_time_end, class: "mdl-textfield__input" %>
+    <%= f.label :flowering_time_end, class: "mdl-textfield__label", value: "Einde bloeitijd" %>
+  </div>
+
+  <%= f.submit :submit, value: "Submit", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %>
+<% end %>
