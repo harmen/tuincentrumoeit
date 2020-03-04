@@ -16,7 +16,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/config/database.yml
 /vendor/*
 
 /node_modules
