@@ -2,7 +2,7 @@ require 'rqrcode'
 module ProductsHelper
 
   def generate_qr_code
-    qrcode = RQRCode::QRCode.new("https://bakkerijfuite.nl")
+    qrcode = RQRCode::QRCode.new("https://www.youtube.com/watch?v=nbvKni45bs8")
 
     svg = qrcode.as_svg(
       offset: 0,

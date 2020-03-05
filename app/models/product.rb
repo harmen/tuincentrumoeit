@@ -1,5 +1,3 @@
 class Product < ApplicationRecord
 
-  
-
 end
