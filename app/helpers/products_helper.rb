@@ -1,8 +1,13 @@
 require 'rqrcode'
+
 module ProductsHelper
 
-  def generate_qr_code
-    qrcode = RQRCode::QRCode.new("https://www.youtube.com/watch?v=nbvKni45bs8")
+  def generate_qr_code(product)
+    if Rails.env.development?
+      qrcode = RQRCode::QRCode.new("localhost:3000/products/#{product.id}")
+    else
+      qrcode = RQRCode::QRCode.new("https://tuincentrum-oeit.herokuapp.com/products/#{product.id}")
+    end
 
     svg = qrcode.as_svg(
       offset: 0,

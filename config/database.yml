@@ -10,3 +10,9 @@ production:
   username: wakfcuschfzgcd
   password: 64dd78c89f1e1328d14384a427caff2d7a914009a3897ffd747c40d5275abd1b
   host: ec2-176-34-97-213.eu-west-1.compute.amazonaws.com
+development:
+  <<: *default
+  host: localhost
+  database: tuincentrum_dev
+  username: plate_dev
+  password: kihlms78030811

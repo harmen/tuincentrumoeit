@@ -3,6 +3,6 @@
   <%= product.description %><br>
   <img height="500px" width="800px" src="<%= product.image_src %>"><br>
   <%= product.height %>cm<br>
-  <%= generate_qr_code %><br>
+  <%= generate_qr_code(product) %><br>
   <%= product.flowering_time_begin.strftime("%d-%m") %>
 <% end %>
