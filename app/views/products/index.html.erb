@@ -1,8 +1,30 @@
-<% @products.each do |product| %>
-  <%= product.name %><br>
-  <%= product.description %><br>
-  <img height="500px" width="800px" src="<%= product.image_src %>"><br>
-  <%= product.height %>cm<br>
-  <%= generate_qr_code(product) %><br>
-  <%= product.flowering_time_begin.strftime("%d-%m") %>
-<% end %>
+<body class="productspage">
+
+  <div id="navbar">
+    <a href="/">Home</a>
+    <%= link_to products_url, class: "active" do %>Product overzicht</a><% end %>
+    <%= link_to dashboard_products_url do %>Dashboard<% end %>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="title">
+        <h3>Productenpagina</h3>
+        <p>Hier komen alle producten te staan.</p>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="row">
+      <% @products.each do |product| %>
+        <div class="col-lg">
+          <div class="square" style="background-image: url('<%= product.image_src %>')">
+            <div class="content">
+              <%= product.name %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</body>

@@ -1,8 +1,10 @@
 module Dashboard
   class ProductsController < ApplicationController
 
-    def index
+    before_action :authenticate_user!
 
+    def index
+      @products = Product.all
     end
 
     def new

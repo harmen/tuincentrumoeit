@@ -1,0 +1,25 @@
+.productspage {
+  background: url("/assets/background-producten.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: "Franklin Gothic Heavy";
+}
+
+.productspage .title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  max-width: 65%;
+  text-align: center;
+  color: white;
+}
+
+.product h2{
+  color: black;
+}
+
+.product img{
+  width: 100%;
+}

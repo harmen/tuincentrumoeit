@@ -1,0 +1,17 @@
+/*Home pagina opmaak
+|------------------------------------------------------------------------|
+|------------------------------------------------------------------------|
+*/
+.homepage {
+  background: url("/assets/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: "Franklin Gothic Heavy";
+}
+
+.homepage h3 {
+    color: white;
+}
+/*End home CSS*/

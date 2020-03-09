@@ -1,0 +1,106 @@
+/*algemene opmaak
+|------------------------------------------------------------------------|
+|------------------------------------------------------------------------|
+*/
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  max-width: 65%;
+  text-align: center;
+}
+.title h3 {
+  margin: auto;
+}
+
+.title p{
+  margin-top: 10px;
+  color: white;
+  font-size: 15pt;
+}
+
+.knop {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+.btn-success {
+  background-color: #167723;
+  border: #167723;
+  font-size: 25pt;
+}
+.container{
+max-width: none;
+}
+
+.btn-primary{
+color: #FFFFFF;
+background-color: #167723;
+border-color: #167723;
+}
+
+.btn-primary:hover{
+color: #FFFFFF;
+background-color: #188727;
+border-color: #188727;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #188727;
+  border-color: #188727;
+}
+
+.form-control:focus {
+  color: #242424;
+  background-color: #fff;
+  border-color: #167723;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+
+}
+/*End algemene CSS*/
+
+/*Navbar opmaak
+|------------------------------------------------------------------------|
+|------------------------------------------------------------------------|
+*/
+#navbar {
+  overflow: hidden;
+  background-color: #242424;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+
+  background-color: #167723;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #167723;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

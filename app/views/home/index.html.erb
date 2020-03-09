@@ -1,0 +1,22 @@
+<body class="homepage">
+
+  <div id="navbar">
+    <a class="active" href="/">Home</a>
+    <%= link_to products_url do %>Product overzicht</a><% end %>
+    <%= link_to dashboard_products_url do %>Dashboard<% end %>
+  </div>
+
+  <div class="container">
+    <div class="title">
+      <h3>TUINCENTRUM</h3>
+      <h3>OEIT</h3>
+      <p>Met deze app kunt u QR codes scannen en zo informatie vinden over onze planten.</p>
+    </div>
+    <div class="knop">
+      <%= link_to products_url do %>
+        <button type="button" class="btn btn-success">Bekijk onze plantjes</button>
+      <% end %>
+    </div>
+  </div>
+
+</body>

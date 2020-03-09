@@ -1,0 +1,97 @@
+.container {
+  max-width: 1800px;
+}
+
+.thead-dark {
+  background-color: #167723;
+}
+.table {
+  margin: 20px 0 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Navbar opmaak
+|------------------------------------------------------------------------|
+|------------------------------------------------------------------------|
+*/
+#navbar {
+  overflow: hidden;
+  background-color: #242424;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+
+  background-color: #167723;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #167723;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+i {
+  color: #167723;
+
+}
+
+.gebruiker {
+  position: absolute;
+  right: 0;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+
+}
+
+.dropdown-item {
+  background-color: #242424;
+}
+.dropdown-menu {
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: #167723;
+  border: none;
+
+}
+.btn-primary:hover {
+  background-color: #0c260e;
+  border: none;
+}
+
+.btn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.new {
+  margin: 20px 0 0 0;
+}
