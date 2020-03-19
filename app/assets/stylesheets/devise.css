@@ -1,0 +1,45 @@
+.loginpage {
+  background: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: "Franklin Gothic Heavy";
+}
+
+.login-content{
+  width: 450px;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.login-content h1{
+  text-align: center;
+  color: white;
+}
+
+.login-content form{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login-content input{
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 12pt;
+}
+
+.login-content button{
+  font-size: 12pt;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
